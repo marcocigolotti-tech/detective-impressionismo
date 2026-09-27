@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Detective dell'Impressionismo – Gruppo Degas – L’Assenzio</title><link rel="stylesheet" href="../style.css"></head><body>
+<header><div><p class="eyebrow">ATTIVITÀ COOPERATIVA • GRUPPO DEGAS – L’ASSENZIO</p><h1>Detective dell’Impressionismo</h1>
+<p class="subtitle">Osserviamo, cerchiamo indizi, formuliamo un’ipotesi.</p>
+<p class="author">Attività didattica ideata dal <strong>Prof. Marco Cigolotti</strong> · <a href="../index.html">Torna ai gruppi</a></p></div>
+<button id="artBtn" class="secondary">🖼 Rivedi l’opera</button></header><main>
+<section class="card intro" data-step="0"><h2>Edgar Degas, <em>L’Assenzio</em>, 1875–1876</h2>
+<button class="art-wrap" id="openArt" aria-label="Ingrandisci l'opera"><img src="../images/degas-assenzio.jpg" alt="Edgar Degas, L’Assenzio, 1875–1876"><span>🔍 Tocca l’immagine per ingrandirla</span></button>
+<p class="caption">Edgar Degas, <em>L’Assenzio</em>, 1875–1876. Musée d’Orsay, Parigi. Immagine: Wikimedia Commons.</p>
+<div class="instruction"><strong>Prima osservate.</strong> Per un minuto non scrivete. Ognuno cerchi almeno un particolare interessante. Potete ingrandire l’immagine.</div>
+<label>Nome del gruppo<input id="groupName" type="text" maxlength="60" placeholder="Es. G5"></label></section>
+<section class="card" data-step="1" hidden><p class="step">1 di 5 • GUARDA</p><h2>👁 Qual è la prima cosa che ha attirato la vostra attenzione?</h2>
+<p class="hint">Confrontate le prime osservazioni e scrivete una risposta breve. <strong>* risposta obbligatoria</strong></p><textarea id="q1" maxlength="240" rows="4" placeholder="La nostra osservazione…"></textarea></section>
+<section class="card" data-step="2" hidden><p class="step">2 di 5 • CERCA GLI INDIZI</p><h2>🔎 Tornate sull’immagine e cercate gli indizi</h2>
+<p class="hint">Una frase breve per ciascun indizio. <strong>* tutte le risposte sono obbligatorie</strong></p>
+<label><strong>☀️ LUCE</strong> — Quali zone sono più illuminate? La luce rende la scena vivace oppure spenta? Indicate un particolare.<textarea id="luce" maxlength="220" rows="2"></textarea></label>
+<label><strong>🎨 COLORE</strong> — Quali tonalità dominano? Notate contrasti forti o colori attenuati? Che effetto producono?<textarea id="colore" maxlength="220" rows="2"></textarea></label>
+<label><strong>🖌️ PENNELLATA</strong> — Dove vedete meglio pennellate libere, rapide o poco definite?<textarea id="pennellata" maxlength="220" rows="2"></textarea></label>
+<label><strong>📷 ISTANTE E INQUADRATURA</strong> — Osservate tavoli, giornale e figure: quali elementi sono tagliati o decentrati? Che effetto produce questa inquadratura?<textarea id="istante" maxlength="220" rows="2"></textarea></label></section>
+<section class="card" data-step="3" hidden><p class="step">3 di 5 • SCEGLI LA PROVA</p><h2>🕵️ Qual è l’indizio più convincente?</h2>
+<p class="hint">Scegliete insieme quello più significativo. <strong>* risposta obbligatoria</strong></p><div class="choices" id="proofChoices">
+<button type="button" data-value="Luce">☀️ LUCE</button><button type="button" data-value="Colore">🎨 COLORE</button><button type="button" data-value="Pennellata">🖌️ PENNELLATA</button><button type="button" data-value="Istante e inquadratura">📷 ISTANTE / INQUADRATURA</button></div>
+<input id="proof" type="hidden"><label>Perché avete scelto proprio questo? <span class="small">Indicate qualcosa che si vede nell’opera.</span><textarea id="why" maxlength="320" rows="4"></textarea></label></section>
+<section class="card" data-step="4" hidden><p class="step">4 di 5 • CONFRONTATEVI</p><h2>💬 All’inizio eravate tutti d’accordo sull’indizio più importante?</h2>
+<div class="choices two" id="agreeChoices"><button type="button" data-value="Sì">SÌ</button><button type="button" data-value="No">NO</button></div><input id="agree" type="hidden">
+<div id="differentWrap" hidden><label>Quali idee diverse sono emerse?<textarea id="different" maxlength="300" rows="3"></textarea></label></div>
+<label>Che cosa vi ha fatto decidere insieme?<textarea id="decision" maxlength="300" rows="3"></textarea></label></section>
+<section class="card" data-step="5" hidden><p class="step">5 di 5 • CONCLUSIONE</p><h2>✍️ La nostra conclusione</h2>
+<p class="hint">Completate insieme. Massimo 3 righe. <strong>* risposta obbligatoria</strong></p>
+<label><strong>Secondo noi quest’opera può essere messa in relazione con le ricerche dell’Impressionismo perché…</strong><textarea id="conclusion" maxlength="420" rows="5"></textarea></label>
+<div class="finishbox"><strong>Prima di consegnare:</strong> rileggete la conclusione e controllate che contenga almeno una prova osservabile nell’opera.</div>
+<button id="sendBtn" class="primary big">✓ ABBIAMO FINITO</button><p id="status" class="status" role="status"></p>
+<p class="footer-credit">Ideazione e progettazione didattica: <strong>Prof. Marco Cigolotti</strong></p></section>
+<nav><button id="prev" class="secondary" disabled>← Indietro</button><div class="progress"><span id="progressText">Opera</span><div><i id="bar"></i></div></div><button id="next" class="primary">Avanti →</button></nav></main>
+<dialog id="artDialog"><button id="closeArt" class="close" aria-label="Chiudi">✕</button><img src="../images/degas-assenzio.jpg" alt="Edgar Degas, L’Assenzio, 1875–1876"><p>Usate lo zoom del tablet per osservare i particolari.</p></dialog>
+<script src="../config.js"></script><script src="app.js"></script></body></html>
